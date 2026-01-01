@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Two Numbers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+        }
+        input, button {
+            padding: 8px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Add Two Numbers</h2>
+
+    <input type="number" id="num1" placeholder="Enter first number">
+    <br>
+
+    <input type="number" id="num2" placeholder="Enter second number">
+    <br>
+
+    <button onclick="addNumbers()">Add</button>
+
+    <h3 id="result"></h3>
+
+    <script src="script.js"></script>
+</body>
+<script>
+    function addNumbers() {
+    // Get values from input fields
+    let number1 = Number(document.getElementById("num1").value);
+    let number2 = Number(document.getElementById("num2").value);
+
+    // Calculate sum
+    let sum = number1 + number2;
+
+    // Display result
+    document.getElementById("result").innerHTML =
+        "Result: " + sum;
+}
+</script>
+</html>
